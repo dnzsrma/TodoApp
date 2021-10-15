@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src = "main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Todo V2</title>
+</head>
+<body>
+    <header>
+        <button id = "newProject"> New project</button>
+        <button id = "newTodo"> New Todo</button>
+    </header>
+    <div id="add-project-popup" class = "popup invisible">
+        <button class = "close-popup">X</button>
+        <form id = "newProjectPopup" name = "projectForm" onsubmit="return false">
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title" value="Project Name"><br>
+            <input class="submit-button" type="submit" value="Submit">
+          </form>
+    </div>
+    <div id="add-todo-popup" class = "popup invisible">
+        <button class = "close-popup">X</button>
+        <form id="newTodoPopup" name="TodoForm" onsubmit="return false">
+            <label for="todo-name">Todo :</label>
+            <input type="text" id ="todo-name" name="todo-name"><br>
+            <label for="todo-description">Description: </label>
+            <input type="text" id="todo-description" name="todo-description"><br>
+            <label for="due-date">Due Date:</label>
+            <input type="text" id="due-date" name="due-date"><br>
+            <label for="priority">Priority: </label>
+            <input type="text" id="priority" name="priority"><br>
+            <input class="submit-button" type="submit" value="Submit">
+        </form>
+    </div>
+    <div id="details-popup" class="popup invisible">
+        <button id="details-close-btn" class = "close-popup">X</button>
+    </div>
+    <div id= "screen">
+        <div id = "display">
+        </div>
+        <div id= "todo-display">
+        </div>
+    </div>
+</body>
+</html>
